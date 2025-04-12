@@ -22,7 +22,7 @@ class ChangeHandler(FileSystemEventHandler):
             self.start_process()
 
 
-script_to_run = "gui.py"  # change to your script name
+script_to_run = "app/gui.py"  # change to your script name
 event_handler = ChangeHandler(script_to_run)
 observer = Observer()
 observer.schedule(event_handler, ".", recursive=True)
